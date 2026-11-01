@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "models": [
+    {"id": "claude-fable-5", "label": "Claude Fable 5", "harness": "claude_code"},
+    {"id": "opus", "label": "Claude Opus 5", "harness": "claude_code", "note": "Alias: the CLI maps it to the latest Opus, so only the label goes stale."},
+    {"id": "sonnet", "label": "Claude Sonnet 5", "harness": "claude_code", "isDefault": true},
+    {"id": "haiku", "label": "Claude Haiku 4.5", "harness": "claude_code"},
+
+    {"id": "", "label": "Default", "harness": "codex", "isDefault": true, "note": "No -m flag: Codex uses its own default. Every other Codex model comes from `codex debug models`, which knows the account."},
+
+    {"id": "", "label": "Default", "harness": "opencode", "isDefault": true},
+
+    {"id": "", "label": "Auto", "harness": "cursor", "isDefault": true, "note": "Only the default here: the rest comes from `cursor-agent models`."},
+
+    {"id": "", "label": "Default", "harness": "pi", "isDefault": true},
+
+    {"id": "", "label": "Auto", "harness": "copilot", "isDefault": true}
+  ]
+}
